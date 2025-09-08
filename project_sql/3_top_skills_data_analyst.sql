@@ -23,6 +23,4 @@ GROUP BY
 ORDER BY
   demand_count DESC
 LIMIT 5;
-
-
 -- we found that most companies like SQL, Python, Excel, Tableau, and PowerBi

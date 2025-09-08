@@ -17,10 +17,8 @@ FROM
 WHERE
   job_postings_fact.job_title_short = 'Data Analyst' 
   AND job_postings_fact.salary_year_avg IS NOT NULL AND job_work_from_home = True  -- optional to filter for remote jobs
-GROUP BY
-  skills_dim.skills 
-ORDER BY
-  avg_salary DESC; 
+GROUP BY skills_dim.skills 
+ORDER BY avg_salary DESC; 
 
 -- for data analyzt positions, top paying skills (regardles of locations) tends to be leaning 
 -- more towards web / dashboard developemnt tools

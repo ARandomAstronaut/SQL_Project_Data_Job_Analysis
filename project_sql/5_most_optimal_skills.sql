@@ -52,5 +52,5 @@ FROM
 	  average_salary ON skills_demand.skill_id = average_salary.skill_id
 -- WHERE demand_count > 10
 ORDER BY demand_count DESC, avg_salary DESC
-LIMIT 10 --Limit 25
-; 
+LIMIT 25; --Limit 25
+

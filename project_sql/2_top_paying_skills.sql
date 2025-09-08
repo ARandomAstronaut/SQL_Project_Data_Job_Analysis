@@ -34,6 +34,6 @@ FROM
     skills_job_dim ON top_paying_jobs.job_id = skills_job_dim.job_id
 	INNER JOIN
     skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
-ORDER BY salary_year_avg DESC
+ORDER BY salary_year_avg DESC;
 
 -- when we dive intotop 10 data analyzt jobs, the highest paying skills are also SQL and Python
